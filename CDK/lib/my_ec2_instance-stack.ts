@@ -43,7 +43,7 @@ export class MyEc2InstanceStack extends cdk.Stack {
       blockDevices: [
         // Add EBS Volume of 20GB
         {
-          deviceName: "/dev/sda1",
+          deviceName: "/dev/xvda",
           volume: ec2.BlockDeviceVolume.ebs(20),
         },
       ],
